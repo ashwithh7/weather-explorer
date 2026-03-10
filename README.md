@@ -1,4 +1,4 @@
-# Weather API Demo (Resume‑Ready)
+# Weather API Demo 
 
 A small React+Vite application that retrieves current weather and a short forecast from the OpenWeatherMap API. It is intended as a clean, feature‑rich example for showcasing on a portfolio or résumé.
 
@@ -57,15 +57,6 @@ The interface is organised as a lightweight dashboard:
    npm run dev
    ```
 
-## Suggestions for a Resume Project
-
-- Add visualizations (line/bar charts) to display forecast trends and historical data. A popular choice is [Chart.js](https://www.chartjs.org/) with `react-chartjs-2`.
-- Convert to TypeScript and show type definitions for API responses
-- Add comprehensive tests (unit + integration) using Jest/RTL
-- Improve accessibility (ARIA roles, keyboard navigation)
-- Implement geolocation, dark mode, or offline caching
-- Deploy to Netlify/Vercel and include a live link in your résumé
 
 ---
 
-The original Vite/React boilerplate README has been replaced with this project‑specific documentation.
