@@ -2,6 +2,10 @@
 
 A small React+Vite application that retrieves current weather and a short forecast from the OpenWeatherMap API. It is intended as a clean, feature‑rich example for showcasing on a portfolio or résumé.
 
+## Live Demo
+
+[View Live App](https://weather-explorer-nine.vercel.app/)
+
 ## Features
 
 The interface is organised as a lightweight dashboard:
