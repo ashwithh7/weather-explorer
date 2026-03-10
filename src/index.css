@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* subtle animated gradient background */
+  background: linear-gradient(135deg, #4e54c8 0%, #8f94fb 100%);
+  background-size: 400% 400%;
+  animation: gradient-bg 15s ease infinite;
+  min-height: 100vh;
+}
+
+@keyframes gradient-bg {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+div {
+  box-sizing: border-box;
+}
+
+/* glass effect */
+.glass {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 1rem;
+  color: #111;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.current-weather {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.current-weather:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+/* forecast cards container scroll helper */
+.forecast-card {
+  min-width: 140px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(6px);
+  font-size: 1rem;
+  padding: 1rem 0.5rem;
+  color: #111;
+  transition: transform 0.24s ease, box-shadow 0.24s ease;
+}
+.forecast-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.forecast-card .text-muted {
+  font-weight: 300;
+}
+
+/* make search bar and results stand out on colored background */
+.search-bar input,
+.search-bar button {
+  border-radius: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  color: #111;
+}
+
+.search-bar input {
+  font-size: 1.1rem;
+  padding: 0.75rem 1rem;
+}
+
+.search-bar button {
+  font-size: 1.1rem;
+  padding: 0.75rem 1.2rem;
+  font-weight: 600;
+}
+
+/* glass header */
+header.glass {
+  padding: 1.5rem 1rem;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(12px);
+}
+
+header h1 {
+  font-size: clamp(2.5rem, 6vw + 1rem, 4rem);
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+/* general heading rules */
+h1, h2, h3, h4, h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+header small {
+  display: block;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 0.25rem;
+  opacity: 0.8;
+}
